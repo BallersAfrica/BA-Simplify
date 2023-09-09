@@ -8,12 +8,20 @@
         body {
             font-family: 'YourUniqueFont', sans-serif; /* Replace 'YourUniqueFont' with the actual font you want to use */
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
 
         .container {
             max-width: 800px;
-            margin: 0 auto;
             padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         h1 {
@@ -21,13 +29,27 @@
             margin-bottom: 20px;
         }
 
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
         .btn {
-            display: inline-block;
             padding: 10px 20px;
             margin: 10px;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background-color 0.3s ease;
+            width: auto;
+        }
+
+        .btn:hover {
+            background-color: #ccc; /* Change to the desired hover color */
         }
 
         /* Define different button colors */
@@ -47,23 +69,36 @@
         a {
             text-decoration: none;
         }
+
+        .logo-container {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 50px; /* Adjust the size as needed */
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome To Simplify</h1>
-        
-        <a class="btn btn-primary" href="https://payments.yo.co.ug/ybs/portal/index.php">Yo Payments</a>
-        <a class="btn btn-secondary" href="https://pos.tracksolconnect.com/signin">Tracksol</a>
-        <a class="btn btn-primary" href="https:sandbox.yo.co.ug/services/yopaymentsdev/portal/index.php">Yo Sandbox</a>
-        <a class="btn btn-secondary" href="https://ballers-africa.com">Company Site</a>
-        <a class="btn btn-primary" href="https://nakuyafancie.netlify.app">Our CEO</a>
-        <a class="btn btn-secondary" href="https://paulbakka.netlify.app">Our Vision Bearer</a>
-        <a class="btn btn-secondary" href="https://ballers.netlify.app">Old site</a>
+        <div class="btn-container">
+            <a class="btn btn-primary" href="https://payments.yo.co.ug/ybs/portal/index.php">Yo Payments</a>
+            <a class="btn btn-secondary" href="https://pos.tracksolconnect.com/signin">Tracksol</a>
+            <a class="btn btn-primary" href="https:sandbox.yo.co.ug/services/yopaymentsdev/portal/index.php">Yo Sandbox</a>
+            <a class="btn btn-secondary" href="https://ballers-africa.com">Company Site</a>
+            <a class="btn btn-primary" href="https://nakuyafancie.netlify.app">Our CEO</a>
+            <a class="btn btn-secondary" href="https://paulbakka.netlify.app">Our Vision Bearer</a>
+            <a class="btn btn-secondary" href="https://ballers.netlify.app">Old site</a>
+        </div>
     </div>
     <div class="logo-container">
         <img src="Asset 1-100.jpg" alt="BA Logo" class="logo">
-      <br><br><br>
+        <br><br><br>
         &copy; Ballers Africa Group 2023. All rights reserved.
     </div>
 </body>
